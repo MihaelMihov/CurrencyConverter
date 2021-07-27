@@ -8,7 +8,7 @@ To run the app, all you need to do is start it from your IDE of choice.
 
 Endpoint is configured as follows:
 *parameters marked in {} are specified by the end user
-http://localhost:8080/trip/{starting country}/{budget per country}/{total budget}/{Initial currency}
+http://localhost:8080/trip/{ starting country}/{budget per country}/{total budget}/{Initial currency}
 
 The number of round trips is calculated first: Round trips = TotalBudget / neighbors count (Currently neighbors count is 5)
 
