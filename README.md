@@ -22,6 +22,11 @@ See example output below:
 
 http://localhost:8080/trip/Turkey/100/1200/EUR
 
+Before getting the result, you will be sasked to login. Please use the following credentials:
+
+Username: root
+Password: root
+
 ![alt text](https://github.com/MihaelMihov/CurrencyConverter/blob/master/src/main/Capture.JPG)
 
 Results are calculated as per the formulas above. 
