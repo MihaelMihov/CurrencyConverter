@@ -12,4 +12,4 @@ http://localhost:8080/trip/{starting country}/{budget per country}/{total budget
 
 ![alt text](https://C:/Users/Mihael/Desktop/Capture.jpg?raw=true)
 
-The application looks for all countries int 
+The application looks for all countries in the region, takes the budget per country and converts it to the local currency.
