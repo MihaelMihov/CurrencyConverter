@@ -8,15 +8,18 @@ To run the app, all you need to do is start it from your IDE of choice.
 
 Endpoint is configured as follows:
 *parameters marked in {} are specified by the end user
-http://localhost:8080/trip/{ starting country}/{budget per country}/{total budget}/{Initial currency}
+http://localhost:8080/trip/{ Starting country}/{Budget per country}/{Total budget}/{Input Currency}
 
 The number of round trips is calculated first: Round trips = TotalBudget / neighbors count (Currently neighbors count is 5)
 
 Total budget per country is determined according to the following formula: Total budget per country = (round trips * budget per country)
 
+If there is leftover, it is always returned in the original currency.
+
 Once total budget per country is calculated , it is the external API's job to convert this budget into the local currency of each neighbor and display the results.
 
-See example output below: (Results are calculated as per the formulas above)
+See example output below: (Results are calculated as per the formulas above) 
+You can experiment by changing the input currency, total budget, budget per country etc.
 
 http://localhost:8080/trip/Turkey/100/1200/EUR
 
