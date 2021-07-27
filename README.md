@@ -16,4 +16,8 @@ Total budget per country is determined according to the following formula: Total
 
 Once total budget per country is calculated , it is the API's job to convert this budget into the local currency of each neighbor and display the results.
 
+See example output below: (Results are calculated as per the formulas above)
+
+http://localhost:8080/trip/Turkey/100/1200/EUR
+
 ![alt text](https://github.com/MihaelMihov/CurrencyConverter/blob/master/src/main/Capture.JPG)
