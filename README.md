@@ -14,7 +14,7 @@ The number of round trips is calculated first: Round trips = TotalBudget / neigh
 
 Total budget per country is determined according to the following formula: Total budget per country = (round trips * budget per country)
 
-Once total budget per country is calculated , it is the API's job to convert this budget into the local currency of each neighbor and display the results.
+Once total budget per country is calculated , it is the external API's job to convert this budget into the local currency of each neighbor and display the results.
 
 See example output below: (Results are calculated as per the formulas above)
 
