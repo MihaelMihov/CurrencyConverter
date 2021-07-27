@@ -40,8 +40,10 @@ public class CurrencyInfoDisplayController {
 
         int tripsCount = this.service.calculateTrips(budgTotal, budgPerCountry);
         int leftOver = this.service.calculateLeftOver(budgTotal, budgPerCountry, tripsCount);
-        String[] exchangeRates = this.service.getExchangeRates(currency, tripsCount * budgPerCountry);
-
+        String[] exchangeRates = {"You don't have eough money for this trip"};
+        if(tripsCount>0) {
+            exchangeRates = this.service.getExchangeRates(currency, tripsCount * budgPerCountry);
+        }
         return "Starting country: " + startCountry + "</br>Budget per country: " + budgPerCountry +
                 "<br/>Total budget: " + budgTotal + "<br/>Starting currency: " + currency
                 + "<br/>" + "Number of round trips: " +  tripsCount +
