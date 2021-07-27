@@ -10,8 +10,6 @@ Endpoint is configured as follows:
 *parameters marked in {} are specified by the end user
 http://localhost:8080/trip/{starting country}/{budget per country}/{total budget}/{Initial currency}
 
-![alt text](https://github.com/MihaelMihov/CurrencyConverter/blob/master/src/main/Capture.JPG)
-
 The number of round trips is calculated first: Round trips = TotalBudget / neighbors count (Currently neighbors count is 5)
 
 Total budget per country is determined according to the following formula: Total budget per country = (round trips * budget per country)
