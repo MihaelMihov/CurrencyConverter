@@ -10,6 +10,6 @@ Endpoint is configured as follows:
 *parameters marked in {} are specified by the end user
 http://localhost:8080/trip/{starting country}/{budget per country}/{total budget}/{Initial currency}
 
-!file://localhost/C:/Users/Mihael/Desktop/Capture.jpg?raw=true
+![alt text](https://lh3.googleusercontent.com/zsI_mGrwBuyNNkRFbtfFSDQTnivdDBpphH9dHN07sEVhc2gbcGyX2YoCCot0vRc7FBpkMg=s170)
 
 The application looks for all countries in the region, takes the budget per country and converts it to the local currency.
