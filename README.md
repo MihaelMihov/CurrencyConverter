@@ -24,7 +24,8 @@ http://localhost:8080/trip/Turkey/100/1200/EUR
 
 ![alt text](https://github.com/MihaelMihov/CurrencyConverter/blob/master/src/main/Capture.JPG)
 
-(Results are calculated as per the formulas above). 
+Results are calculated as per the formulas above. 
+
 You can experiment by changing the input currency, total budget, budget per country etc.
 
 
