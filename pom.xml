@@ -79,6 +79,13 @@
 			<artifactId>exec-maven-plugin</artifactId>
 			<version>1.6.0</version>
 		</dependency>
+<<<<<<< HEAD
+=======
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+>>>>>>> 38338bc (adding files)
 	</dependencies>
 	<build>
 		<plugins>
