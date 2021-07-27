@@ -18,9 +18,14 @@ If there is leftover, it is always returned in the original currency.
 
 Once total budget per country is calculated , it is the external API's job to convert this budget into the local currency of each neighbor and display the results.
 
-See example output below: (Results are calculated as per the formulas above) 
-You can experiment by changing the input currency, total budget, budget per country etc.
+See example output below: 
 
 http://localhost:8080/trip/Turkey/100/1200/EUR
 
 ![alt text](https://github.com/MihaelMihov/CurrencyConverter/blob/master/src/main/Capture.JPG)
+
+(Results are calculated as per the formulas above) 
+You can experiment by changing the input currency, total budget, budget per country etc.
+
+
+
