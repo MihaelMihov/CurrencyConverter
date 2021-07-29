@@ -40,9 +40,13 @@ You can experiment by changing the input currency, total budget, budget per coun
 
 If your money is not enough for a full trip, you will receive the output below:
 
+http://localhost:8080/trip/Turkey/500/1200/EUR
+
 ![alt text](https://github.com/MihaelMihov/CurrencyConverter/blob/master/src/main/Capture2.JPG)
 
 Lastly, if a particular currency doesn't have exchange rate listed, you will see "No data". For Example:
+
+http://localhost:8080/trip/Russia/500/8000/EUR
 
 ![alt text](https://github.com/MihaelMihov/CurrencyConverter/blob/master/src/main/Capture3.JPG)
 
