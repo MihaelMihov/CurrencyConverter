@@ -10,7 +10,7 @@ This app uses currency exchange rates from the following API https://exchangerat
 
 To run the app, all you need to do is start it from your IDE of choice.
 
-You can also run the app by opening command prompt in the folder where your pom.xml file is located.
+You can also run it by opening command prompt in the folder where your pom.xml file is located.
 
 Once you open command promt please type: mvn spring-boot:run
 
