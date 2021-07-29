@@ -4,7 +4,7 @@ This REST API localhost Spring boot application allows you to plan your trip acr
 
 The app relies on H2 embedded database
 
-The app automatically finds your neighbors (Based on the Starting Country parameter) and it calculates the budget needed for each of your travels converted to the local currency of your neughbor.
+The trip planner automatically finds your neighbors (Based on the Starting Country parameter) and it calculates the budget needed for each of your travels converted to the local currency of your neughbors.
 
 This app uses currency exchange rates from the following API https://exchangerate.host/#/#docs.
 
