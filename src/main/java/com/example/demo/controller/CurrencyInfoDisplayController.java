@@ -37,28 +37,7 @@ public class CurrencyInfoDisplayController {
     @ResponseBody
     public String tripDetails(@PathVariable String startCountry, @PathVariable Double budgPerCountry,
                               @PathVariable Double budgTotal, @PathVariable String currency) {
-
-        int tripsCount = this.service.calculateTrips(budgTotal, budgPerCountry);
-        int leftOver = this.service.calculateLeftOver(budgTotal, budgPerCountry, tripsCount);
-
-        if (tripsCount > 0) {
-            String[] exchangeRates = this.service.getExchangeRates(currency, tripsCount * budgPerCountry);
-
-            return "Starting country: " + startCountry + "</br>Budget per country: " + budgPerCountry +
-                    "<br/>Total budget: " + budgTotal + "<br/>Starting currency: " + currency
-                    + "<br/>" + "Number of round trips: " + tripsCount +
-                    "<br/> Total budget per country: " + (tripsCount * budgPerCountry) + " " + currency
-                    + "<br/>Leftover is: " + leftOver + " " + currency
-                    + "<br/><br/>" + Arrays.toString(exchangeRates);
-
-        } else {
-            return "Starting country: " + startCountry + "</br>Budget per country: " + budgPerCountry +
-                    "<br/>Total budget: " + budgTotal + "<br/>Starting currency: " + currency
-                    + "<br/>" + "Number of round trips: " + tripsCount +
-                    "<br/> Total budget per country: " + (tripsCount * budgPerCountry) + " " + currency
-                    + "<br/>Leftover is: " + leftOver + " " + currency
-                    + "<br/><br/>" + "Not enough Money for this trip";
-
-        }
+        return this.service.formatOutput(startCountry,budgPerCountry,
+                budgTotal,currency);
     }
 }
