@@ -12,7 +12,7 @@ To run the app, all you need to do is start it from your IDE of choice.
 
 You can also run it by opening command prompt in the folder where your pom.xml file is located.
 
-Once you open command promt please type: mvn spring-boot:run
+Once you open command prompt please type: mvn spring-boot:run
 
 Endpoint is configured as follows:
 *parameters marked in {} are specified by the end user
