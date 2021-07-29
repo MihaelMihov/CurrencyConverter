@@ -1,8 +1,12 @@
 # CurrencyConverter
 
-This REST API localhost Spring boot application allows you to plan your trip across Bulgaria, Greece, North Macedonia, Turkey and Romania. (Bulgaria's neighbors, support for other countries neighbors to be added soon)
+This REST API localhost Spring boot application allows you to plan your trip across the world.
 
-It gets currency rates from the following Currency Exchange Rates API https://exchangerate.host/#/#docs.
+The app relies on H2 embedded database
+
+The app automatically finds your neighbors (Based on the Starting Country parameter) and it calculates the budget needed for each of your travels converted to the local currency of your neughbor.
+
+This app uses currency exchange rates from the following API https://exchangerate.host/#/#docs.
 
 To run the app, all you need to do is start it from your IDE of choice.
 
@@ -16,23 +20,30 @@ Total budget per country is determined according to the following formula: Total
 
 If there is leftover, it is always returned in the original currency.
 
-Once total budget per country is calculated , it is the external API's job to convert this budget into the local currency of each neighbor and display the results.
+Once total budget per country is calculated , it is the external API's job to convert this budget into the local currency of each neighbor.
 
-See example output below: 
+You can also see the total number of your neighbors and the Grand total for the entire trip
 
 http://localhost:8080/trip/Turkey/100/1200/EUR
 
 Before getting the result, you will be asked to login. Please use the following credentials:
 
 Username: root
-
 Password: root
 
+See example output below: 
 ![alt text](https://github.com/MihaelMihov/CurrencyConverter/blob/master/src/main/Capture.JPG)
 
 Results are calculated as per the formulas above. 
 
 You can experiment by changing the input currency, total budget, budget per country etc.
 
+If your money is not enough for a full trip, you will receive the output below:
 
+![alt text](https://github.com/MihaelMihov/CurrencyConverter/blob/master/src/main/Capture2.JPG)
 
+Lastly, if a particular currency doesn't have exchange rate listed, you will see "No data". For Example:
+
+![alt text](https://github.com/MihaelMihov/CurrencyConverter/blob/master/src/main/Capture3.JPG)
+
+I hope you enjoyusing this app.
