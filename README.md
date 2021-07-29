@@ -10,6 +10,10 @@ This app uses currency exchange rates from the following API https://exchangerat
 
 To run the app, all you need to do is start it from your IDE of choice.
 
+You can also run the app by opening command prompt in the folder where your pom.xml file is located.
+
+Once you open command promt please type: mvn spring-boot:run
+
 Endpoint is configured as follows:
 *parameters marked in {} are specified by the end user
 http://localhost:8080/trip/{ Starting country}/{Budget per country}/{Total budget}/{Input Currency}
