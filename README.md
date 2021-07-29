@@ -1,6 +1,6 @@
 # CurrencyConverter
 
-This REST API localhost Spring boot application allows you to plan your trip across the world.
+This REST API localhost Spring boot application allows you to plan your trip across the world. :)
 
 The app relies on H2 embedded database
 
