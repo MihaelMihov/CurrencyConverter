@@ -54,4 +54,4 @@ http://localhost:8080/trip/Russia/500/8000/EUR
 
 ![alt text](https://github.com/MihaelMihov/CurrencyConverter/blob/master/src/main/Capture3.JPG)
 
-I hope you enjoyusing this app.
+I hope you enjoy using this app.
