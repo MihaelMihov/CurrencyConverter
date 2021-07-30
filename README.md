@@ -1,14 +1,18 @@
 # CurrencyConverter
 
-This REST API localhost Spring boot application allows you to plan your trip across the world.
+This REST API localhost Spring boot application allows you to plan your trip across the world. :)
 
 The app relies on H2 embedded database
 
-The app automatically finds your neighbors (Based on the Starting Country parameter) and it calculates the budget needed for each of your travels converted to the local currency of your neughbor.
+The trip planner automatically finds your neighbors (Based on the Starting Country parameter) and it calculates the budget needed for each of your travels converted to the local currency of your neughbors.
 
 This app uses currency exchange rates from the following API https://exchangerate.host/#/#docs.
 
 To run the app, all you need to do is start it from your IDE of choice.
+
+You can also run it by opening command prompt in the folder where your pom.xml file is located.
+
+Once you open command prompt please type: mvn spring-boot:run
 
 Endpoint is configured as follows:
 *parameters marked in {} are specified by the end user
@@ -40,10 +44,14 @@ You can experiment by changing the input currency, total budget, budget per coun
 
 If your money is not enough for a full trip, you will receive the output below:
 
+http://localhost:8080/trip/Turkey/500/1200/EUR
+
 ![alt text](https://github.com/MihaelMihov/CurrencyConverter/blob/master/src/main/Capture2.JPG)
 
 Lastly, if a particular currency doesn't have exchange rate listed, you will see "No data". For Example:
 
+http://localhost:8080/trip/Russia/500/8000/EUR
+
 ![alt text](https://github.com/MihaelMihov/CurrencyConverter/blob/master/src/main/Capture3.JPG)
 
-I hope you enjoyusing this app.
+I hope you enjoy using this app.
