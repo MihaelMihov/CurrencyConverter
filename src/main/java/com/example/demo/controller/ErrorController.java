@@ -1,24 +1,21 @@
 package com.example.demo.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
-import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
 
-@RestController("/error")
-public class ErrorController {
-	
-	@ExceptionHandler(Exception.class)
-	public ModelAndView handleException
-		(HttpServletRequest request, Exception ex){
-		ModelAndView mv = new ModelAndView();
+@RestController
+public class ErrorController implements org.springframework.boot.web.servlet.error.ErrorController {
 
-		mv.addObject("exception", ex.getLocalizedMessage());
-		mv.addObject("url", request.getRequestURL());
-		
-		mv.setViewName("error");
-		return mv;
+	private static final String PATH = "/error";
+
+	@RequestMapping(value = PATH)
+	public String error() {
+		return "Oops,something went wrong. <br/>Try checking the connection and make sure URL spelling is correct";
 	}
 
+	public String getErrorPath() {
+		return PATH;
+	}
 }
+
+
